@@ -1,7 +1,6 @@
-﻿# Dockerfile for FunC end Blueprint
+﻿# Dockerfile for ton with toncli and blueprint
 
-This docker image should come in handy to run [toncli](https://github.com/disintar/toncli) with the [new tests support](https://github.com/disintar/toncli/blob/master/docs/advanced/func_tests_new.md).  
-Setting it all up manually could be cumbersome otherwise.  
+This docker image should come in handy to run [toncli](https://github.com/disintar/toncli) and [blueprint](https://github.com/ton-org/blueprint?ysclid=mapjve8jjc895527764). Setting it all up manually could be cumbersome otherwise.  
 Inspired by [Dockerfile for FunC](https://hub.docker.com/r/trinketer22/func_docker/).  
 Built on Ubuntu 22.04 so should be WSL docker compatible.
 Mult-arch supported *x86_64 (amd64)* and *arm64/v8* **(M4 compatible!)**.  
@@ -16,9 +15,7 @@ Mult-arch supported *x86_64 (amd64)* and *arm64/v8* **(M4 compatible!)**.
 ## Build
 
  To build an image run: `docker build . -t ton-local [ optional --build-arg ]`  
- Where *ton-local* would be an image name.
-
- For arch supported *arm64/v8* run `docker build --platform=linux/arm64 . -t ton-local`
+ Where *ton-local* would be an image name. For supported *arm64/v8* run `docker build --platform=linux/arm64 . -t ton-local`
 
  Or run `docker compose build`
  
