@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  ton-local:
+    image: ton-local
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: ${TARGET_PLATFORM}
+    volumes:
+      - ${HOST_CODE_DIR}:/code
+    working_dir: /code
+    tty: true
+    stdin_open: true

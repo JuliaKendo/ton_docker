@@ -1,0 +1,5 @@
+{   
+    "dependencies": {
+        "@ton-community/blueprint": "^0.12.0"
+    }
+}
